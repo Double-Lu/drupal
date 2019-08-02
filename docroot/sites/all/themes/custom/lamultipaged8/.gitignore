@@ -1,0 +1,16 @@
+*.html
+humans.txt
+robots.txt
+.sass-cache
+node_modules
+npm-debug.log
+config.codekit
+.idea
+bower_components
+.bin
+bower_components
+sftp-config.json
+.DS_Store
+.libraries
+lib
+

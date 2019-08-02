@@ -1,0 +1,23 @@
+{
+  "name": "THEMENAME",
+  "version": "1.0.0",
+  "description": "THEMENAME Bootstrap Sass Sub-theme setup",
+  "main": "gulpfile.js",
+  "author": "lexsoft",
+  "devDependencies": {
+    "autoprefixer": "^8.2.0",
+    "gulp": "^3.9.1",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.1",
+    "gulp-scss-lint": "^0.7.1",
+    "gulp-sourcemaps": "^2.6.4",
+    "gulp-if": "^2.0.2",
+    "gulp-eslint": "^5.0.0",
+    "gulp-imagemin": "^4.1.0",
+    "imagemin-pngquant": "^6.0.0"
+  },
+  "dependencies": {
+    "font-awesome": "^4.7.0"
+  }
+}

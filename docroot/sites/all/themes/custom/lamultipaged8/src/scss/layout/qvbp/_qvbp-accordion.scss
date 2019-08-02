@@ -1,0 +1,60 @@
+// Accordion Paragraph.
+// paragraph--bp-accordion.html.twig
+// Adds margin and padding to paragraphs in accordion Section bodies.
+// -----------------------------------------------------------------------------
+
+.collapse.in {
+  .paragraph {
+    padding-bottom: 20px;
+  }
+}
+
+.paragraph--type--bp-accordion{
+	.panel-default{
+		border: none;
+		.panel-heading{
+			border: none;
+	    	background: white;
+		    padding-top: 0;
+		    padding-bottom: 0;	
+		    margin-bottom: 25px;	
+			.panel-title{
+			    background: white;
+			    border: 2px solid $brand-primary;
+			    border-radius: 5px;
+			    color: $dark;
+				a{
+					position:relative;
+					padding-left: 25px;
+					display: block;
+					color: $dark;
+					&:after {
+						  font-family: 'Glyphicons Halflings';
+						  content: "\e080"; /* "play" icon */
+						  position: absolute;
+						  color: $brand-primary;
+						  font-size: 18px;
+						  line-height: 22px;
+						  left: 0;
+						  top: calc(50% - 10px);
+
+						  /* rotate "play" icon from > (right arrow) to down arrow */
+						  -webkit-transform: rotate(90deg);
+						  -moz-transform:    rotate(90deg);
+						  -ms-transform:     rotate(90deg);
+						  -o-transform:      rotate(90deg);
+						  transform:         rotate(90deg);
+					}
+					&.collapsed:after {
+						  /* rotate "play" icon from > (right arrow) to ^ (up arrow) */
+						  -webkit-transform: rotate(90deg);
+						  -moz-transform:    rotate(90deg);
+						  -ms-transform:     rotate(90deg);
+						  -o-transform:      rotate(90deg);
+						  transform:         rotate(90deg);
+					}					
+				}			    					
+			}				
+		}
+	}
+}

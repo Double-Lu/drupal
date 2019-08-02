@@ -1,0 +1,48 @@
+core: 8.x
+type: theme
+base theme: bootstrap
+logo: 'images/required.svg'
+screenshot: 'images/screenshot.png'
+name: 'LA Basic Multi-Page Sub-theme'
+description: 'An LA Basic Sub-theme for individual sites created from the DrupalCoders Bootstrap Base'
+package: 'Bootstrap'
+
+regions:
+  navigation: 'Navigation'
+  navigation_collapsible: 'Navigation (Collapsible)'
+  header: 'Top Bar'
+  highlighted: 'Highlighted'
+  help: 'Help'
+  content: 'Content'
+  sidebar_first: 'Primary'
+  sidebar_second: 'Secondary'
+  featured_bottom_first: 'Featured bottom first 1/3'
+  featured_bottom_second: 'Featured bottom second 2/3'
+  featured_bottom_third: 'Featured bottom third 3/3'
+  footer_first: 'Footer first 1/3'
+  footer_second: 'Footer second 2/3'
+  footer_third: 'Footer third 3/3'
+  # footer_fourth: 'Footer fourth 4/4'  
+  footer: 'Footer'
+  footer_bottom: 'Footer Bottom'
+  page_top: 'Page top'
+  page_bottom: 'Page bottom'
+
+libraries-extend:
+  bootstrap/framework:
+    - lamultipaged8/framework
+
+libraries-override:
+  quick_v_bootstrap_paragraphs/qvbp-colors: lamultipaged8/qvbp-colors  
+
+libraries:
+  - lamultipaged8/custom-scripts
+
+ckeditor_stylesheets:
+  - css/lamultipaged8.style.css
+
+# Information added by Drupal.org packaging script on 2018-09-19
+# version: '8.x-1.0-rc2'
+# core: '8.x'
+# project: 'drupalcoders_bootstrap'
+# datestamp: 1537349006

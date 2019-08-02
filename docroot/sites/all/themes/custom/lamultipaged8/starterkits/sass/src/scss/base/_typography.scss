@@ -1,0 +1,13 @@
+// Typography
+// -----------------------------------------------------------------------------
+label{
+	font-weight: normal;
+	position: relative;
+	&.form-required{
+		&:after{
+			margin-left: 5px;
+	   		position: absolute;
+	   		top: 0;
+		}	
+	}
+}

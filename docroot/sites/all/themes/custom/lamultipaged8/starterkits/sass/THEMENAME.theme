@@ -1,0 +1,17 @@
+<?php
+
+/**
+ * @file
+ * Drupal Coders Bootstrap THEMENAME sub-theme.
+ *
+ * Place your custom PHP code in this file.
+ */
+
+ /**
+  * Implements hook_preprocess_html().
+  */
+ function THEMENAME_preprocess_html(&$variables) {
+   if ($node = \Drupal::request()->attributes->get('node')) {
+     $variables['attributes']['class'][] = 'page-node-' . $node->id();
+   }
+ }

@@ -1,0 +1,31 @@
+framework:
+  css:
+    theme:
+      css/THEMENAME.style.css: {}
+  js:
+    src/bootstrap/assets/javascripts/bootstrap/affix.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/alert.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/button.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/carousel.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/collapse.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/dropdown.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/modal.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/tooltip.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/popover.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/scrollspy.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/tab.js: {}
+    src/bootstrap/assets/javascripts/bootstrap/transition.js: {}
+
+# Quick V Bootstrap Paragraphs colors theme.
+qvbp-colors:
+  css:
+    theme:
+      css/layout/qvbp-colors.theme.css: {}
+
+custom-scripts:
+  js:
+    js/THEMENAME.app.js: {}
+  dependencies:
+    - core/jquery
+    - core/jquery.once
+    - core/drupal

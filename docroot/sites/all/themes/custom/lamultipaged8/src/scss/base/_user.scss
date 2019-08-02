@@ -1,0 +1,66 @@
+// User Login Page
+// -----------------------------------------------------------------------------
+.path-user{
+	.navbar.user-login-page{
+		margin-bottom: 100px;
+	}
+	.header-login-page{
+		.page-header{
+			display: none;
+		}
+		.tabs--primary{
+			display: none;
+		}
+	}
+	.user-login-container{
+			max-width: 500px;
+			margin: 0 auto;
+		    @media #{$mobile} {
+		    	width: 80%;
+		    }
+		    .title{
+			    width: 100%;
+			    background: $brand-lightgray;
+			    text-align: center;
+			    padding: 23px 0px 21px 0px;
+			    @media #{$tablet} {
+			    	float: left;
+			    }	
+			    h3{
+				    margin-top: 0;
+				    font-weight: bold;
+				    text-transform: uppercase;
+				    letter-spacing: 2px;			    	
+			    }	    	
+			    p{
+			    	font-size: 13px;
+			    }
+		    }
+		    .account-fields{
+			    width: 100%;
+			    padding: 30px 30px 40px 30px;
+			    text-align: left;
+			    border: 2px solid $brand-lightgray;
+			    @media #{$tablet} {
+			    	float: left;
+			    }				    
+		    }
+		    .user-login-form,
+		    .user-register-form,
+		    .user-pass{
+		    	label{
+				    width: 100%;
+				    font-weight: normal;
+				    position: relative;
+				    @media #{$tablet} {
+				    	float: left;
+				    }					    
+				    &::after{
+				    	margin-left: 5px;
+   						position: absolute;
+   						top: 0;
+				    }
+		    	}
+		    }		
+	}
+}

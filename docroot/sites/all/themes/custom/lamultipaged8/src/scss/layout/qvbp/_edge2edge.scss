@@ -1,0 +1,40 @@
+// Quick V Bootstrap Edge to Edge layout for content.
+section.col-sm-12{
+    .bg-edge2edge {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+
+    &:before {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+}
+section.col-sm-9, 
+section.col-sm-6{
+    .bg-edge2edge {
+    width: 100%;
+    position: relative;
+    &:before {
+      content: " ";
+      display: table;
+    }
+
+    &:after {
+      clear: both;
+    }
+  }
+}
+
+
+body {
+    overflow-x: hidden;
+}

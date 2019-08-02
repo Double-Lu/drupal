@@ -1,0 +1,119 @@
+// Quick V Bootstrap Paragraphs colors theme.
+// -----------------------------------------------------------------------------
+// Default variables.
+@import "../default-variables";
+
+// Add display so color shows.
+.paragraph.paragraph--color {
+  display: table;
+}
+
+// Adds padding to fill in color.
+.paragraph.paragraph--color > .paragraph__column {
+  padding-top: $jumbotron-padding;
+  padding-bottom: $jumbotron-padding;
+}
+
+// Fills color on colorless .paragraph__column after color .paragraph__column.
+.paragraph.paragraph--color + .paragraph > .paragraph__column {
+  padding-top: $jumbotron-padding;
+}
+
+// Background colours;
+// -----------------------------------------------------------------------------
+
+$qvbp_color_01: $brand-primary; 
+$qvbp_color_02: $brand-secondary; 
+$qvbp_color_03: $brand-darkgray; 
+$qvbp_color_04: $brand-lightgray; 
+$qvbp_color_05: $brand-alert; 
+
+// Foreground colours:
+// -----------------------------------------------------------------------------
+// qvbp_foreground_color_01: White for background qvbp_color_01 color.
+// qvbp_foreground_color_02: White for background qvbp_color_02 color.
+// qvbp_foreground_color_03: White for background qvbp_color_03 color.
+// qvbp_foreground_color_04: Black for background qvbp_color_04 color.
+// qvbp_foreground_color_05: White for background qvbp_color_05 color.
+
+$qvbp_foreground_color_01: #ffffff; // White
+$qvbp_foreground_color_02: #ffffff; // White
+$qvbp_foreground_color_03: #ffffff; // White
+$qvbp_foreground_color_04: #000000; // Black
+$qvbp_foreground_color_05: #ffffff; // White
+
+.qvbp_color_01 {
+  background: $qvbp_color_01;
+  color: $qvbp_foreground_color_01;
+  
+  a {
+    color: $qvbp_foreground_color_01;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+      color: $qvbp_foreground_color_01;
+    }
+  }
+}
+.qvbp_color_02 {
+  background: $qvbp_color_02;
+  color: $qvbp_foreground_color_02;
+  
+  a {
+    color: $qvbp_foreground_color_02;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+      color: $qvbp_foreground_color_02;
+    }
+  }
+}
+.qvbp_color_03 {
+  background: $qvbp_color_03;
+  color: $qvbp_foreground_color_03;
+  
+  a {
+    color: $qvbp_foreground_color_03;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+      color: $qvbp_foreground_color_03;
+    }
+  }
+}
+.qvbp_color_04 {
+  background: $qvbp_color_04;
+  color: $qvbp_foreground_color_04;
+  
+  a {
+    color: $qvbp_foreground_color_04;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+      color: $qvbp_foreground_color_04;
+    }
+  }
+}
+.qvbp_color_05 {
+  background: $qvbp_color_05;
+  color: $qvbp_foreground_color_05;
+  
+  a {
+    color: $qvbp_foreground_color_05;
+    
+    &:hover,
+    &:focus,
+    &:active,
+    &.is-active {
+      color: $qvbp_foreground_color_05;
+    }
+  }
+}

@@ -1,0 +1,235 @@
+// @todo these should be their own CSS files and only included when
+// specific Drupal libraries are used.
+@import "component/alert";
+@import "component/ajax";
+@import "component/field";
+@import "component/file";
+@import "component/filter";
+@import "component/form";
+@import "component/icon";
+@import "component/navbar";
+@import "component/node";
+@import "component/panel";
+@import "component/progress-bar";
+@import "component/table-drag";
+@import "component/tabs";
+@import "component/toolbar";
+// Base Helpers
+@import "base/mixins";
+@import "base/fonts";
+@import "base/qvbp";
+@import "base/helpers";
+@import "base/typography";
+@import "base/user";
+// Website Layout
+@import "layout/qvbp/edge2edge";
+@import "layout/qvbp/qvbp-accordion";
+@import "layout/qvbp/qvbp-carousel";
+@import "layout/qvbp/qvbp-image";
+@import "layout/qvbp/qvbp-modal";
+@import "layout/qvbp/qvbp-tabs";
+@import "layout/menu_main";
+@import "layout/frontpage";
+@import "layout/node_page";
+@import "layout/blocks";
+@import "layout/footer";
+
+// jQuery UI style overrides.
+@import "jquery-ui/autocomplete";
+
+
+.container{
+  max-width: 100%;
+}
+.container-fluid{
+  max-width: 1300px;
+}
+// Page header.
+.page-header {
+  margin-top: 0;
+}
+
+// Footer.
+.footer {
+  margin-top: 45px;
+  padding-top: 35px;
+  padding-bottom: 36px;
+}
+html {
+  &.overlay-open .navbar-fixed-top {
+    z-index: 400;
+  }
+  &.js {
+    // Collapsible fieldsets.
+    fieldset.collapsed {
+      border-left-width: 1px;
+      border-right-width: 1px;
+      height: auto;
+    }
+    // Throbbers.
+    input.form-autocomplete {
+      background-image: none;
+    }
+    // Autocomplete.
+    input.form-autocomplete {
+      background-image: none;
+    }
+    // Autocomplete (fallback throbber, no icon).
+    .autocomplete-throbber {
+      background-position: 100% 2px;
+      background-repeat: no-repeat;
+      display: inline-block;
+      height: 15px;
+      margin: 2px 0 0 2px;
+      width: 15px;
+    }
+    .autocomplete-throbber.throbbing {
+      background-position: 100% -18px;
+    }
+  }
+}
+
+// Paragraphs.
+p:last-child,
+.form-group:last-child,
+.panel:last-child {
+  margin-bottom: 0;
+}
+
+// Help region.
+.region-help {
+  > .glyphicon {
+    font-size: $font-size-large;
+    float: left;
+    margin: -0.05em 0.5em 0 0;
+  }
+  .block {
+    overflow: hidden;
+  }
+}
+
+
+.help-block, .control-group .help-inline {
+  color: $gray-light;
+  font-size: 12px;
+  margin: 5px 0 10px;
+  padding: 0;
+  &:first-child {
+    margin-top: 0;
+  }
+}
+
+// Adjust z-index of bootstrap modals
+.modal {
+  z-index: 1620;
+}
+
+.modal-dialog {
+  z-index: 1630;
+}
+
+.ctools-modal-dialog .modal-body {
+  width: 100% !important;
+  overflow: auto;
+}
+
+.modal-backdrop {
+  z-index: 1610;
+}
+
+// Element invisible fix
+.element-invisible {
+  margin: 0;
+  padding: 0;
+  width: 1px;
+}
+
+// Lists.
+.nav-tabs {
+  margin-bottom: 10px;
+}
+
+ul li.collapsed,
+ul li.expanded,
+ul li.leaf {
+  list-style: none;
+  list-style-image: none;
+}
+
+.tabs--secondary {
+  margin: 0 0 10px;
+}
+
+// Submitted.
+.submitted {
+  margin-bottom: 1em;
+  font-style: italic;
+  font-weight: normal;
+  color: #777;
+}
+
+// Fix page title and tabs in the region header.
+.main-container {
+  .region {
+    &.region-header {
+      h1,
+      .h1 {
+        margin-top: 0;
+      }
+
+      .tabs {
+        margin-bottom: 10px;
+      }
+    }
+  }
+}
+
+// CKEditor Improvements.
+.cke_editable body {
+  background: white;
+}
+
+.cke_editable {
+  padding: 10px;
+}
+ 
+.field-collection-view {
+  padding: 0;
+  margin: 0;
+  border-bottom: 0 none;
+}
+.field-collection-container {
+  border-bottom: 0 none;
+}
+
+// Administration menu Overrides.
+#admin-menu-search {
+  float: right;
+  .form-control {
+    float: auto;
+  }
+}
+
+.form-textarea-wrapper textarea {
+  max-width: 100%;
+}
+
+// HTML elements setup.
+dt {
+  font-size: 120%;
+}
+
+dd{
+  margin-left: 10px;
+  margin-bottom: 20px;
+}
+
+img {
+ max-width: 100%;
+}
+
+.maintenance-page {
+  #page {
+    text-align: center;
+  }
+}

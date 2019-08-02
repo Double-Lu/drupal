@@ -1,0 +1,4 @@
+profiles/*
+
+sites/*/files
+sites/*/*settings*php
